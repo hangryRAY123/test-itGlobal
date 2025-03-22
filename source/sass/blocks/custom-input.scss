@@ -1,0 +1,35 @@
+.custom-input {
+  width: 100%;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $color-default-gray;
+  outline: none;
+  padding: 5px 0 5px 8px;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  background: #fcfcfd;
+  transition: 0.3s ease-in-out;
+
+  &--calendar {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  &:hover {
+    border-color: #0078cf;
+  }
+
+  &::placeholder {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #abb1ba;
+  }
+
+  &[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+}

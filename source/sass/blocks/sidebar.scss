@@ -1,0 +1,86 @@
+.sidebar {
+  display: flex;
+  background-color: $color-default-white;
+  color: $color-default-gray;
+  width: 100%;
+  max-width: 336px;
+
+  &__tab {
+    border-right: 1px solid #d5d8dd;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fcfcfd;
+    border-right: 1px solid #d5d8dd;
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border-bottom: 1px solid #d5d8dd;
+    background-color: $color-default-white;
+
+    form {
+      width: 100%;
+
+      input {
+        padding-right: 25px;
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        background-size: 16px 16px;
+        background-image: url("../img/svg/filter.svg");
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px);
+    overflow: auto;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: $color-default-gray;
+    padding: 10px 16px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+      background-position: center;
+      background-image: url("../img/svg/arrow.svg");
+    }
+  }
+
+  @include vp-991 {
+    width: auto;
+
+    &__inner {
+      display: none;
+    }
+  }
+
+  @include vp-767 { 
+    width: 0;
+  }
+}

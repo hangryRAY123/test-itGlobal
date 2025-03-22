@@ -1,0 +1,9 @@
+.intro {
+  background-color: $color-default-white;
+  color: $color-default-gray;
+
+  &__wrapper {
+   display: flex;
+   height: 100%;
+  }
+}

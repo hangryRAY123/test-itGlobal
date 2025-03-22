@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>SIMPLEONE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="visually-hidden">Личный кабинет</h1>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <a class="header__logo" href="#"
+              ><img src="img/logo.png" width="174" height="24" alt="Simpleone."
+            /></a>
+            <div class="header__search">
+              <form action="#">
+                <input
+                  class="custom-input"
+                  type="text"
+                  name="search"
+                  placeholder="Поиск"
+                />
+                <button type="submit" class="visually-hidden">Найти</button>
+              </form>
+            </div>
+            <div class="header__profile">
+              <img
+                src="img/avatar.png"
+                width="32"
+                height="32"
+                alt="Максим Галактионов."
+              />
+              <span>Максим Галактионов</span>
+            </div>
+            <button class="btn btn--icon" type="button">
+              <svg aria-hidden="true" focusable="false" width="20" height="20">
+                <use href="img/sprite.svg#settings"></use>
+              </svg>
+              <span class="visually-hidden">Настройки.</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="container">
+            <div class="intro__wrapper">
+              <aside class="sidebar">
+                <ul class="sidebar__tab">
+                  <li class="sidebar__tab-item">
+                    <button class="btn btn--tab btn--sidebar" type="button">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                      >
+                        <use href="img/sprite.svg#sidebar"></use>
+                      </svg>
+                      <span class="visually-hidden">Боковая панел.</span>
+                    </button>
+                  </li>
+                  <li class="sidebar__tab-item">
+                    <button class="btn btn--tab" type="button">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                      >
+                        <use href="img/sprite.svg#star"></use>
+                      </svg>
+                      <span class="visually-hidden">Избранное.</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="sidebar__inner">
+                  <div class="sidebar__filter">
+                    <form action="#">
+                      <input
+                        class="custom-input"
+                        type="text"
+                        name="search-menu"
+                        placeholder="Поиск по меню"
+                      />
+                      <button type="submit" class="visually-hidden">
+                        Найти
+                      </button>
+                    </form>
+                    <button class="btn btn--icon" type="button">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="img/sprite.svg#no-pin"></use>
+                      </svg>
+                      <span class="visually-hidden">Закрепить.</span>
+                    </button>
+                  </div>
+                  <nav class="sidebar__nav">
+                    <ul class="sidebar__list">
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Моя работа</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Структура портала</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Личное расписание</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Отсутствие на рабочем месте</a
+                        >
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Портфель услуг</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Дашборды</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Доски задач</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Обращения</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">События</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Инциденты</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Проблемы</a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Настройка каталогов
+                        </a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Запросы на обслуживание</a
+                        >
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Запросы на изменение</a
+                        >
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Управление конфигурациями</a
+                        >
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Управление уровнем услуг</a
+                        >
+                      </li>
+                      <li class="sidebar__item">
+                        <a class="sidebar__link" href="#"
+                          >Настройка соответствий</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </aside>
+              <div class="task">
+                <div class="task__header">
+                  <div class="task__create">
+                    <span>Подзадача</span>
+                    <button class="btn btn--default" type="button">
+                      Создать
+                    </button>
+                  </div>
+                  <div class="task__save">
+                    <button class="btn btn--primary" type="button">
+                      Сохранить
+                    </button>
+                    <button class="btn btn--default" type="button">
+                      Сохранить и выйти
+                    </button>
+                  </div>
+                </div>
+                <div class="task__wrapper">
+                  <h2 class="task__title">
+                    STSK0004783 На инциденте, запросе, проблеме, в статусе
+                    закрыто некоторые поля остаются редактируемыми для агента
+                    если он Caller
+                  </h2>
+                  <form action="#" class="task__form">
+                    <div class="task__column">
+                      <label class="task__item task__item--required">
+                        <span>Тема</span>
+                        <input
+                          class="custom-input"
+                          type="text"
+                          name="theme"
+                          value="На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller"
+                          required
+                        />
+                      </label>
+                      <label class="task__item">
+                        <span>Статус</span>
+                        <input
+                          class="custom-input"
+                          type="text"
+                          name="status"
+                          value="Новая"
+                        />
+                      </label>
+                      <label class="task__item">
+                        <span>Описание</span>
+                        <input
+                          class="custom-input"
+                          type="text"
+                          name="description"
+                        />
+                      </label>
+                      <label class="task__item">
+                        <span>Продукт</span>
+                        <div class="task__inner">
+                          <input
+                            class="custom-input"
+                            type="text"
+                            name="product"
+                            value="PLatform"
+                          />
+                          <button class="btn btn--icon" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#search-form"></use>
+                            </svg>
+                            <span class="visually-hidden">Поиск.</span>
+                          </button>
+                        </div>
+                      </label>
+                      <label class="task__item task__item--required">
+                        <span>Рабочие заметки</span>
+                        <input
+                          class="custom-input"
+                          type="text"
+                          name="work-notes"
+                          value="Проверить ACL id=172830402014193655"
+                          required
+                        />
+                      </label>
+                      <label class="task__item">
+                        <span>Приоритет</span>
+                        <input
+                          class="custom-input"
+                          type="text"
+                          name="priority"
+                          value="Средний"
+                        />
+                      </label>
+                      <label class="task__item">
+                        <span>Ответственный</span>
+                        <div class="task__inner">
+                          <div class="select2-custom select2-custom--default">
+                            <select
+                              id="responsible"
+                              multiple="multiple"
+                              style="width: 100%"
+                            >
+                              <option value="1" selected>
+                                Константин Константинопольский
+                              </option>
+                              <option value="2">Максим Галактионов</option>
+                              <option value="3">Алла Лин</option>
+                              <option value="4">
+                                Константин Константинопольский Константинович
+                              </option>
+                              <option value="5">Игорь Иванченко</option>
+                            </select>
+                            <button class="btn btn--remove" type="button">
+                              <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                width="16"
+                                height="16"
+                              >
+                                <use href="img/sprite.svg#close-circle"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <button class="btn btn--icon" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#plus"></use>
+                            </svg>
+                            <span class="visually-hidden">Добавить.</span>
+                          </button>
+                          <button class="btn btn--icon btn--add" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#search-form"></use>
+                            </svg>
+                            <span class="visually-hidden">Поиск.</span>
+                          </button>
+                        </div>
+                      </label>
+                      <label class="task__item">
+                        <span>Группа</span>
+                        <div class="task__inner">
+                          <div class="select2-custom select2-custom--default">
+                            <select
+                              id="group"
+                              multiple="multiple"
+                              style="width: 100%"
+                            >
+                              <option value="1" selected>Support Group</option>
+                              <option value="2">Support</option>
+                              <option value="3">Group</option>
+                            </select>
+                            <button class="btn btn--remove" type="button">
+                              <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                width="16"
+                                height="16"
+                              >
+                                <use href="img/sprite.svg#close-circle"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <button class="btn btn--icon btn--add" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#plus"></use>
+                            </svg>
+                            <span class="visually-hidden">Добавить.</span>
+                          </button>
+                          <button class="btn btn--icon" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#search-form"></use>
+                            </svg>
+                            <span class="visually-hidden">Поиск.</span>
+                          </button>
+                        </div>
+                      </label>
+                    </div>
+                    <label class="task__item">
+                      <span>Комментарии</span>
+                      <input class="custom-input" type="text" name="comment" />
+                    </label>
+                    <label class="task__item">
+                      <span>Согласующие</span>
+                      <div class="task__inner">
+                        <div class="select2-custom">
+                          <select
+                            id="coordinating"
+                            multiple="multiple"
+                            style="width: 100%"
+                          >
+                            <option value="1" selected>Андрей Пивоваров</option>
+                            <option value="2" selected>
+                              Максим Галактионов
+                            </option>
+                            <option value="3" selected>Алла Лин</option>
+                            <option value="4" selected>
+                              Константин Константинопольский Константинович
+                            </option>
+                            <option value="5" selected>Игорь Иванченко</option>
+                            <option value="6" selected>Юлия Эйчаровна</option>
+                            <option value="7" selected>
+                              Артем Подпрыгайко-Саппортов
+                            </option>
+                            <option value="8" selected>Илья Вазнец</option>
+                            <option value="9" selected>Михаил Вортенов</option>
+                            <option value="10" selected>Наталья Нашевна</option>
+                            <option value="11" selected>
+                              Евгения Итамовна
+                            </option>
+                            <option value="12" selected>Алиса Киральчук</option>
+                          </select>
+                          <button class="btn btn--remove" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="16"
+                              height="16"
+                            >
+                              <use href="img/sprite.svg#close-circle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="btn btn--icon btn--add" type="button">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#plus"></use>
+                          </svg>
+                          <span class="visually-hidden">Добавить.</span>
+                        </button>
+                        <button class="btn btn--icon" type="button">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#search-form"></use>
+                          </svg>
+                          <span class="visually-hidden">Поиск.</span>
+                        </button>
+                      </div>
+                    </label>
+                    <div class="task__column">
+                      <label class="task__item">
+                        <span>Когда открыто</span>
+                        <div class="task__inner task__inner--calendar">
+                          <input
+                            class="custom-input custom-input--calendar"
+                            type="date"
+                            name="opening-date"
+                          />
+                          <button
+                            class="btn btn--icon btn--calendar"
+                            type="button"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#calendar"></use>
+                            </svg>
+                            <span class="visually-hidden">Календарь.</span>
+                          </button>
+                        </div>
+                      </label>
+                      <label class="task__item">
+                        <span>Когда создано</span>
+                        <div class="task__inner task__inner--calendar">
+                          <input
+                            class="custom-input custom-input--calendar"
+                            type="date"
+                            name="creation-date"
+                            value="2024-10-22"
+                          />
+                          <button
+                            class="btn btn--icon btn--calendar"
+                            type="button"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#calendar"></use>
+                            </svg>
+                            <span class="visually-hidden">Календарь.</span>
+                          </button>
+                        </div>
+                      </label>
+                      <label class="task__item">
+                        <span>Кем открыто</span>
+                        <div class="task__inner">
+                          <div class="select2-custom select2-custom--default">
+                            <select
+                              id="open"
+                              multiple="multiple"
+                              style="width: 100%"
+                            >
+                              <option value="1" selected>
+                                Константин Константинопольский
+                              </option>
+                              <option value="2">Максим Галактионов</option>
+                              <option value="3">Алла Лин</option>
+                              <option value="4">
+                                Константин Константинопольский Константинович
+                              </option>
+                              <option value="5">Игорь Иванченко</option>
+                            </select>
+                            <button class="btn btn--remove" type="button">
+                              <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                width="16"
+                                height="16"
+                              >
+                                <use href="img/sprite.svg#close-circle"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <button class="btn btn--icon btn--add" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#plus"></use>
+                            </svg>
+                            <span class="visually-hidden">Добавить.</span>
+                          </button>
+                          <button class="btn btn--icon" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#search-form"></use>
+                            </svg>
+                            <span class="visually-hidden">Поиск.</span>
+                          </button>
+                        </div>
+                      </label>
+                      <label class="task__item">
+                        <span>Кем создано</span>
+                        <div class="task__inner">
+                          <div class="select2-custom select2-custom--default">
+                            <select
+                              id="create"
+                              multiple="multiple"
+                              style="width: 100%"
+                            >
+                              <option value="1" selected>
+                                Константин Константинопольский
+                              </option>
+                              <option value="2">Максим Галактионов</option>
+                              <option value="3">Алла Лин</option>
+                              <option value="4">
+                                Константин Константинопольский Константинович
+                              </option>
+                              <option value="5">Игорь Иванченко</option>
+                            </select>
+                            <button class="btn btn--remove" type="button">
+                              <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                width="16"
+                                height="16"
+                              >
+                                <use href="img/sprite.svg#close-circle"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <button class="btn btn--icon btn--add" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#plus"></use>
+                            </svg>
+                            <span class="visually-hidden">Добавить.</span>
+                          </button>
+                          <button class="btn btn--icon" type="button">
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="img/sprite.svg#search-form"></use>
+                            </svg>
+                            <span class="visually-hidden">Поиск.</span>
+                          </button>
+                        </div>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

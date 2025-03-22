@@ -1,0 +1,99 @@
+.btn {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: $color-default-gray;
+  padding: 5px 12px;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: $color-default-white;
+  transition: 0.3s ease-in-out;
+
+  &--default {
+    &:hover {
+      border-color: #0078cf;
+    }
+  }
+
+  &--primary {
+    background-color: #0078cf;
+    color: $color-default-white;
+    border-color: #0078cf;
+
+    &:hover {
+      background-color: #025d9f;
+      border-color: #025d9f;
+    }
+  }
+
+  &--tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+
+    &:hover {
+      background-color: #d5d8dd;
+    }
+  }
+
+  &--icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    &:hover {
+      bottom: 2px;
+      left: 2px;
+      box-shadow: -7px 7px 5px 0 rgba(0, 0, 0, 0.75);
+    }
+
+    &:active {
+      bottom: 0;
+      left: 0;
+      box-shadow: none;
+    }
+  }
+
+  &--remove {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  @include vp-767 {
+    &--sidebar {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

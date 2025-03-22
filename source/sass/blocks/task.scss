@@ -1,0 +1,134 @@
+.task {
+  background-color: $color-default-white;
+  color: $color-default-gray;
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: $color-default-white;
+  }
+
+  &__header.fixed {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.04);
+  }
+
+  &__create {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    span {
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+
+  &__save {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    height: calc(100vh - 120px);
+    overflow: auto;
+  }
+
+  &__title {
+    display: inline-block;
+    font-family: $second-family;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &--required {
+      span {
+        display: flex;
+        gap: 4px;
+
+        &::before {
+          content: "*";
+          display: block;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 143%;
+          color: #b21f00;
+        }
+      }
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 143%;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: start;
+    gap: 4px;
+  }
+
+  &__select {
+    width: 100%;
+  }
+
+  @include vp-991 {
+    &__column {
+      grid-template-columns: 1fr;
+    }
+    &__create {
+      width: 100%;
+      justify-content: space-between;
+
+      span {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 143%;
+        text-transform: uppercase;
+        color: #5c6470;
+      }
+    }
+
+    &__save {
+      display: none;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 120%;
+    }
+  }
+}
